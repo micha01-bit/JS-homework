@@ -71,6 +71,11 @@ a {
   font-family: "Montserrat"; 
   cursor: pointer; 
 } 
+
+.top__button:hover {
+  background: #FFF;
+  color: #000;
+}
  
 /*Полоса прокрутки*/
 .scrollbar {
