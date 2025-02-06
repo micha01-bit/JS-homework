@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+      .center {
+        padding-left: 16px; 
+        padding-right: 16px;
+      } 
+       
+      .top {
+         
+        &__title {
+          width: 262px;
+          height: 196px; 
+          font-size: 40px;
+          line-height: 49px; 
+          padding-top: 147px; 
+          text-align: center; 
+          padding-left: 40px;
+        }
+      }
+    }
+     
