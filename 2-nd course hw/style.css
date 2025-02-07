@@ -82,7 +82,7 @@ a {
   display: flex;
   align-items: center;
   -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
   flex-wrap: wrap;
   overflow: hidden;
@@ -97,12 +97,16 @@ a {
   padding-right: 51px;
   padding-left: 51px;
 }
+.scrollbar-mob {
+  display: none;
+}
 
 .games {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: #202027;
+  height: 1470px;
 }
 .games__title {
   color: #FFF;
@@ -123,8 +127,7 @@ a {
   line-height: 32px;
   max-width: 788px;
   padding-bottom: 72px;
-} 
-
+}
 .games-img {
   max-height: 1060px;
   max-width: 1200px;
@@ -133,8 +136,7 @@ a {
   grid-template-rows: repeat(3, 1fr);
   gap: 32px;
   align-items: start;
-} 
-
+}
 .games-img__card {
   display: flex;
   flex-direction: column;
@@ -201,6 +203,12 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .top {
+    width: 376px;
+    height: 648.66px;
+    background-image: url(img/bigStar-mob.svg), url(img/Star1-mob.svg), url(img/Star3-mob.svg), url(img/Star2-mob.svg), url(img/Star4-mob.svg);
+    background-position: 215px 0px, 45px 100px, 305px 580px, 270px 560px, 95px 70px;
+  }
   .top__title {
     width: 262px;
     height: 196px;
@@ -209,5 +217,75 @@ a {
     padding-top: 147px;
     text-align: center;
     padding-left: 40px;
+  }
+  .top__text {
+    width: 296px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .top__text-weight {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .top__link {
+    width: 285px;
+    height: 41px;
+    font-size: 16px;
+    line-height: 141.69%;
+    margin-left: 25px;
+    margin-top: 36px;
+    padding-top: 18px;
+  }
+  .scrollbar {
+    width: 1717.4px;
+    height: 51.34px;
+  }
+  .scrollbar__text {
+    font-size: 16px;
+    line-height: 110%;
+    padding-right: 27.4px;
+    padding-left: 27.4px;
+  }
+  .scrollbar-dec {
+    display: none;
+  }
+  .scrollbar-mob {
+    display: flex;
+  }
+  .games {
+    width: 376px;
+    height: 3340px;
+  }
+  .games__title {
+    width: 343px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    padding-top: 48.34px;
+  }
+  .games__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 48.61px;
+    width: 343px;
+  }
+  .games-img {
+    width: 343px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+  .games-img__item {
+    height: 285px;
+  }
+  .games-img__card_top {
+    margin-top: 0;
+  }
+  .games-img__item_4 {
+    padding-left: 45px;
+    padding-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
