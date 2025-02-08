@@ -1,29 +1,29 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-  } 
-   
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: "Montserrat", sans-serif;
-  } 
+  font-family: "Montserrat", sans-serif;
+}
 
 a {
-    text-decoration: none;
-  }
-  
+  text-decoration: none;
+}
+
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-  } 
-   
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 /* ШАПКА*/
 .top {
   background: #E1FF8F;
   background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
   background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
   background-repeat: no-repeat;
-  }  
-   
+}
 .top__title {
   color: #202027;
   font-family: "Montserrat", sans-serif;
@@ -34,9 +34,8 @@ a {
   max-width: 769px;
   max-height: 358px;
   padding-top: 196px;
-} 
- 
-.top__text{
+}
+.top__text {
   color: #202027;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -45,8 +44,7 @@ a {
   line-height: 32px;
   padding-top: 24px;
   max-width: 720px;
-} 
- 
+}
 .top__text-weight {
   color: #202027;
   font-family: "Montserrat", sans-serif;
@@ -54,44 +52,42 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-} 
- 
-.top__link { 
+}
+.top__link {
   display: inline-block;
   width: 247px;
   height: 50px;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
-  color: #FFFFFF; 
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   margin-top: 48px;
   margin-bottom: 187px;
-  font-family: "Montserrat"; 
-  cursor: pointer;  
+  font-family: "Montserrat";
+  cursor: pointer;
   padding-top: 16px;
-} 
-
+}
 .top__link:hover {
   background: #FFF;
   color: #000;
-} 
- 
+}
+
 /*Полоса прокрутки*/
 .scrollbar {
   width: 3220px;
   height: 90px;
   display: flex;
   align-items: center;
-  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
   flex-wrap: wrap;
   overflow: hidden;
   max-height: 87px;
 }
-
 .scrollbar__text {
   font-family: "Montserrat";
   color: rgb(32, 32, 39);
@@ -101,16 +97,17 @@ a {
   padding-right: 51px;
   padding-left: 51px;
 }
-
+.scrollbar-mob {
+  display: none;
+}
 
 .games {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: #202027;
+  height: 1470px;
 }
-
-
 .games__title {
   color: #FFF;
   font-family: Montserrat;
@@ -121,18 +118,16 @@ a {
   padding-top: 94px;
   padding-bottom: 24px;
 }
-
 .games__text {
   color: #FFF;
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; 
-  max-width: 788px; 
+  line-height: 32px;
+  max-width: 788px;
   padding-bottom: 72px;
 }
-
 .games-img {
   max-height: 1060px;
   max-width: 1200px;
@@ -142,15 +137,13 @@ a {
   gap: 32px;
   align-items: start;
 }
-
 .games-img__card {
   display: flex;
   flex-direction: column;
   grid-column: span 4;
-  background-color: #FFFFFF ;
+  background-color: #FFFFFF;
   border-radius: 30px;
 }
-
 .games-img__item {
   border-radius: 30px;
   height: 314px;
@@ -158,32 +151,29 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .games-img__card_top {
   margin-top: -40px;
 }
-
 .games-img__item_1 {
   background: url(img/card1.svg);
 }
 .games-img__item_2 {
   background: url(img/card2.svg);
 }
-.games-img__item_3{
+.games-img__item_3 {
   background: url(img/card3.svg);
 }
-.games-img__item_4{
-  position: absolute; 
-  padding-left: 65px; 
+.games-img__item_4 {
+  position: absolute;
+  padding-left: 65px;
   padding-top: 30px;
 }
-.games-img__item_5{
+.games-img__item_5 {
   background: url(img/card5.svg);
 }
-.games-img__item_6{
+.games-img__item_6 {
   background: url(img/card6.svg);
 }
-
 .games-img__number {
   width: 111px;
   height: 36px;
@@ -199,7 +189,6 @@ a {
   margin-left: 32px;
   margin-bottom: 16px;
 }
-
 .games-img__text {
   color: rgb(32, 32, 39);
   font-size: 32px;
@@ -208,4 +197,95 @@ a {
   padding: 0 36px 32px;
   max-width: 372px;
 }
-   
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: 376px;
+    height: 648.66px;
+    background-image: url(img/bigStar-mob.svg), url(img/Star1-mob.svg), url(img/Star3-mob.svg), url(img/Star2-mob.svg), url(img/Star4-mob.svg);
+    background-position: 215px 0px, 45px 100px, 305px 580px, 270px 560px, 95px 70px;
+  }
+  .top__title {
+    width: 262px;
+    height: 196px;
+    font-size: 40px;
+    line-height: 49px;
+    padding-top: 147px;
+    text-align: center;
+    padding-left: 40px;
+  }
+  .top__text {
+    width: 296px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .top__text-weight {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .top__link {
+    width: 285px;
+    height: 41px;
+    font-size: 16px;
+    line-height: 141.69%;
+    margin-left: 25px;
+    margin-top: 36px;
+    padding-top: 18px;
+  }
+  .scrollbar {
+    width: 1717.4px;
+    height: 51.34px;
+  }
+  .scrollbar__text {
+    font-size: 16px;
+    line-height: 110%;
+    padding-right: 27.4px;
+    padding-left: 27.4px;
+  }
+  .scrollbar-dec {
+    display: none;
+  }
+  .scrollbar-mob {
+    display: flex;
+  }
+  .games {
+    width: 376px;
+    height: 3340px;
+  }
+  .games__title {
+    width: 343px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    padding-top: 48.34px;
+  }
+  .games__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 48.61px;
+    width: 343px;
+  }
+  .games-img {
+    width: 343px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+  .games-img__item {
+    height: 285px;
+  }
+  .games-img__card_top {
+    margin-top: 0;
+  }
+  .games-img__item_4 {
+    padding-left: 45px;
+    padding-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
