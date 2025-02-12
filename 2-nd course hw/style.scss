@@ -118,7 +118,7 @@
        
       &__title {
         color: #FFF;
-        font-family: Montserrat;
+        font-family: "Montserrat",sans-serif;
         font-size: 64px;
         font-style: normal;
         font-weight: 700;
@@ -214,6 +214,115 @@
         max-width: 372px;
       } 
     
+    } 
+     
+    .mini-games { 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #202027; 
+      height: 3500px; 
+       
+      &__title {
+        color: #FFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        width: 400px;
+        height: 78px; 
+        padding-top: 46px; 
+        padding-bottom: 72px;
+      } 
+    } 
+     
+    .game-cards {
+      width: 1200px; 
+      height: 3160px; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between; 
+       
+      &__container {
+       display: flex; 
+       flex-wrap: wrap;
+       flex-direction: column; 
+       width: 1200px; 
+       height: 500px; 
+       gap: 32px;
+       background-color: #FFFFFF; 
+       border-radius: 30px;
+      } 
+       
+      &__item {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+         
+        &_1 {
+          background-image: url(img/big-card1.svg);
+        } 
+         
+        &_2 {
+          background-image: url(img/big-card2.svg);
+        } 
+         
+        &_3 {
+          background-image: url(img/big-card3.svg);
+        } 
+         
+        &_4 {
+          background-image: url(img/big-card4.svg);
+        } 
+         
+        &_5 {
+          background-image: url(img/big-card5.svg);
+        } 
+         
+        &_6 {
+          background-image: url(img/big-card6.svg);
+        }
+      } 
+       
+      &__title {
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+      } 
+       
+      &__text {
+        color: rgb(32, 32, 39); 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+      } 
+       
+      &__link { 
+        display: inline-block;
+        width: 247px;
+        height: 50px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center; 
+        padding-top: 16px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      }
     }
      
     @import 'mobile';
