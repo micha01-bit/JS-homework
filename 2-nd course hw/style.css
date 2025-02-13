@@ -101,12 +101,16 @@ a {
   display: none;
 }
 
+/*Об играх*/
 .games {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: #202027;
   height: 1470px;
+  background-image: url(img/blackStar-big.svg), url(img/blackStar-middle1.svg), url(img/blackStar-small1.svg);
+  background-repeat: no-repeat;
+  background-position: 1060px 127px, 40px 822px, 25px 770px;
 }
 .games__title {
   color: #FFF;
@@ -198,12 +202,16 @@ a {
   max-width: 372px;
 }
 
+/*Мини-игры*/
 .mini-games {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: #202027;
   height: 3500px;
+  background-image: url(img/blackStar-middle.svg), url(img/blackStar-small.svg), url(img/blackStar-middle2.svg), url(img/blackStar-small2.svg);
+  background-repeat: no-repeat;
+  background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px;
 }
 .mini-games__title {
   color: #FFF;
@@ -218,6 +226,7 @@ a {
   padding-bottom: 72px;
 }
 
+/*Карточки мини-игр*/
 .game-cards {
   width: 1200px;
   height: 3160px;
@@ -230,9 +239,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 1200px;
+  min-width: 1200px;
   height: 500px;
-  gap: 32px;
   background-color: #FFFFFF;
   border-radius: 30px;
 }
@@ -257,22 +265,40 @@ a {
   background-image: url(img/big-card4.svg);
 }
 .game-cards__item_5 {
-  background-image: url(img/big-card5.svg);
+  position: absolute;
+  background: none;
+  padding-left: 707px;
+  padding-top: 50px;
 }
 .game-cards__item_6 {
   background-image: url(img/big-card6.svg);
 }
+.game-cards__item1 {
+  border-radius: 30px;
+  height: 500px;
+  width: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 50px;
+}
 .game-cards__title {
+  width: 505px;
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
+  padding-top: 48px;
+  padding-left: 48px;
 }
 .game-cards__text {
   color: rgb(32, 32, 39);
+  width: 505px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
+  padding-top: 24px;
+  padding-left: 48px;
 }
 .game-cards__link {
   display: inline-block;
@@ -288,10 +314,28 @@ a {
   cursor: pointer;
   text-align: center;
   padding-top: 16px;
+  margin-top: 36px;
+  margin-left: 48px;
 }
 .game-cards__link:hover {
   background-color: #fff;
   color: #000;
+}
+
+/*Подвал*/
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+}
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 61px;
 }
 
 @media (max-width: 767px) {
