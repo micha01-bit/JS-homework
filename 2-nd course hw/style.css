@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -23,6 +24,7 @@ a {
   background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
   background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
   background-repeat: no-repeat;
+  height: 710px;
 }
 .top__title {
   color: #202027;
@@ -85,7 +87,6 @@ a {
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
   flex-wrap: wrap;
-  overflow: hidden;
   max-height: 87px;
 }
 .scrollbar__text {
@@ -158,24 +159,24 @@ a {
 .games-img__card_top {
   margin-top: -40px;
 }
-.games-img__item_1 {
+.games-img__item1 {
   background: url(img/card1.svg);
 }
-.games-img__item_2 {
+.games-img__item2 {
   background: url(img/card2.svg);
 }
-.games-img__item_3 {
+.games-img__item3 {
   background: url(img/card3.svg);
 }
-.games-img__item_4 {
+.games-img__item4 {
   position: absolute;
   padding-left: 65px;
   padding-top: 30px;
 }
-.games-img__item_5 {
+.games-img__item5 {
   background: url(img/card5.svg);
 }
-.games-img__item_6 {
+.games-img__item6 {
   background: url(img/card6.svg);
 }
 .games-img__number {
@@ -252,25 +253,25 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-.game-cards__item_1 {
+.game-cards__item-a {
   background-image: url(img/big-card1.svg);
 }
-.game-cards__item_2 {
+.game-cards__item2 {
   background-image: url(img/big-card2.svg);
 }
-.game-cards__item_3 {
+.game-cards__item3 {
   background-image: url(img/big-card3.svg);
 }
-.game-cards__item_4 {
+.game-cards__item4 {
   background-image: url(img/big-card4.svg);
 }
-.game-cards__item_5 {
+.game-cards__item5 {
   position: absolute;
   background: none;
-  padding-left: 707px;
-  padding-top: 50px;
+  margin-left: 707px;
+  margin-top: 50px;
 }
-.game-cards__item_6 {
+.game-cards__item6 {
   background-image: url(img/big-card6.svg);
 }
 .game-cards__item1 {
@@ -318,6 +319,45 @@ a {
   margin-left: 48px;
 }
 .game-cards__link:hover {
+  background-color: #fff;
+  color: #000;
+}
+.game-cards__title1 {
+  width: 505px;
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  padding-top: 48px;
+  padding-left: 10px;
+}
+.game-cards__text1 {
+  color: rgb(32, 32, 39);
+  width: 505px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 24px;
+  padding-left: 10px;
+}
+.game-cards__link1 {
+  display: inline-block;
+  width: 247px;
+  height: 50px;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 16px;
+  margin-top: 36px;
+  margin-left: 10px;
+}
+.game-cards__link1:hover {
   background-color: #fff;
   color: #000;
 }

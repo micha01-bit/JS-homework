@@ -4,7 +4,8 @@
      } 
        
     body {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat", sans-serif; 
+        overflow-x: hidden; 
       } 
     
     a {
@@ -22,7 +23,7 @@
       background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
       background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
       background-repeat: no-repeat; 
-       
+      height: 710px;
        
       &__title {
         color: #202027;
@@ -90,7 +91,6 @@
       backdrop-filter: blur(50px);
       background: rgb(188, 236, 48);
       flex-wrap: wrap;
-      overflow: hidden;
       max-height: 87px; 
        
       &__text {
@@ -171,24 +171,24 @@
         margin-top: -40px;
       }
       
-      &-img__item_1 {
+      &-img__item1 {
         background: url(img/card1.svg);
       }
-      &-img__item_2 {
+      &-img__item2 {
         background: url(img/card2.svg);
       }
-      &-img__item_3{
+      &-img__item3{
         background: url(img/card3.svg);
       }
-      &-img__item_4{
+      &-img__item4{
         position: absolute; 
         padding-left: 65px; 
         padding-top: 30px;
       }
-      &-img__item_5{
+      &-img__item5{
         background: url(img/card5.svg);
       }
-      &-img__item_6{
+      &-img__item6{
         background: url(img/card6.svg);
       }
       
@@ -269,30 +269,30 @@
         background-repeat: no-repeat;
         background-position: center; 
          
-        &_1 {
+        &-a {
           background-image: url(img/big-card1.svg); 
         } 
          
-        &_2 {
+        &2 {
           background-image: url(img/big-card2.svg);
         } 
          
-        &_3 {
+        &3 {
           background-image: url(img/big-card3.svg);
         } 
          
-        &_4 {
+        &4 {
           background-image: url(img/big-card4.svg);
         } 
          
-        &_5 {
-          position: absolute; 
+        &5 {
+          position: absolute;  
           background: none; 
-          padding-left: 707px; 
-          padding-top: 50px; 
+          margin-left: 707px;
+          margin-top: 50px;
         }
          
-        &_6 {
+        &6 {
           background-image: url(img/big-card6.svg);
         }
       } 
@@ -348,7 +348,50 @@
           background-color: #fff; 
           color: #000;
         }
+      }  
+       
+      &__title1 { 
+        width: 505px; 
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px; 
+        padding-top: 48px; 
+        padding-left: 10px;
       } 
+       
+      &__text1 {
+        color: rgb(32, 32, 39); 
+        width: 505px; 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px; 
+        padding-top: 24px; 
+        padding-left: 10px;
+      } 
+       
+      &__link1 { 
+        display: inline-block;
+        width: 247px;
+        height: 50px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center; 
+        padding-top: 16px; 
+        margin-top: 36px; 
+        margin-left: 10px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      }
        
     }  
     /*Подвал*/
