@@ -1,0 +1,414 @@
+* {
+        margin: 0;
+        padding: 0;
+     } 
+       
+    body {
+        font-family: "Montserrat", sans-serif; 
+        overflow-x: hidden; 
+      } 
+    
+    a {
+        text-decoration: none;
+      }
+      
+    .center {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+      } 
+       
+    /* ШАПКА*/
+    .top {
+      background: #E1FF8F;
+      background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
+      background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
+      background-repeat: no-repeat; 
+      height: 710px;
+       
+      &__title {
+        color: #202027;
+        font-family: "Montserrat", sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 769px;
+        max-height: 358px;
+        padding-top: 196px;
+      } 
+       
+      &__text{
+        color: #202027;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+        max-width: 720px;
+      } 
+       
+      &__text-weight {
+        color: #202027;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+      } 
+       
+      &__link { 
+        display: inline-block;
+        width: 247px;
+        height: 50px;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 48px;
+        margin-bottom: 187px;
+        font-family: "Montserrat"; 
+        cursor: pointer; 
+        padding-top: 16px;
+      } 
+      
+      &__link:hover {
+        background: #FFF;
+        color: #000;
+      } 
+    
+    }  
+     
+    /*Полоса прокрутки*/
+    .scrollbar {
+      width: 3220px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      backdrop-filter: blur(50px);
+      background: rgb(188, 236, 48);
+      flex-wrap: wrap;
+      max-height: 87px; 
+       
+      &__text {
+        font-family: "Montserrat";
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-right: 51px;
+        padding-left: 51px;
+      }  
+       
+      &-mob {
+        display: none;
+      }
+    
+    }
+    /*Об играх*/
+    .games {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #202027; 
+      height: 1470px; 
+      background-image: url(img/blackStar-big.svg), url(img/blackStar-middle1.svg), url(img/blackStar-small1.svg); 
+      background-repeat: no-repeat; 
+      background-position: 1060px 127px, 40px 822px, 25px 770px; 
+
+      &__title {
+        color: #FFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 94px;
+        padding-bottom: 24px;
+      }
+      
+      &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        max-width: 788px; 
+        padding-bottom: 72px;
+      }
+      
+      &-img {
+        max-height: 1060px;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 32px;
+        align-items: start;
+      }
+      
+      &-img__card {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 4;
+        background-color: #FFFFFF ;
+        border-radius: 30px;
+      }
+      
+      &-img__item {
+        border-radius: 30px;
+        height: 314px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      &-img__card_top {
+        margin-top: -40px;
+      }
+      
+      &-img__item1 {
+        background: url(img/card1.svg);
+      }
+      &-img__item2 {
+        background: url(img/card2.svg);
+      }
+      &-img__item3{
+        background: url(img/card3.svg);
+      }
+      &-img__item4{
+        position: absolute; 
+        padding-left: 65px; 
+        padding-top: 30px;
+      }
+      &-img__item5{
+        background: url(img/card5.svg);
+      }
+      &-img__item6{
+        background: url(img/card6.svg);
+      }
+      
+      &-img__number {
+        width: 111px;
+        height: 36px;
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-bottom: 16px;
+      }
+      
+      &-img__text {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        text-align: left;
+        padding: 0 36px 32px;
+        max-width: 372px;
+      } 
+    
+    } 
+    /*Мини-игры*/ 
+    .mini-games { 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #202027; 
+      height: 3500px; 
+      background-image: url(img/blackStar-middle.svg), url(img/blackStar-small.svg), url(img/blackStar-middle2.svg), url(img/blackStar-small2.svg); 
+      background-repeat: no-repeat; 
+      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px;
+       
+      &__title {
+        color: #FFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        width: 400px;
+        height: 78px; 
+        padding-top: 46px; 
+        padding-bottom: 72px;
+      } 
+    } 
+    /*Карточки мини-игр*/ 
+    .game-cards {
+      width: 1200px; 
+      height: 3160px; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between; 
+       
+      &__container {
+       display: flex; 
+       flex-wrap: wrap;
+       flex-direction: column; 
+       min-width: 1200px; 
+       height: 500px; 
+       background-color: #FFFFFF; 
+       border-radius: 30px;
+      } 
+       
+     &__item {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+         
+        &-a {
+          background-image: url(img/big-card1.svg); 
+        } 
+         
+        &2 {
+          background-image: url(img/big-card2.svg);
+        } 
+         
+        &3 {
+          background-image: url(img/big-card3.svg);
+        } 
+         
+        &4 {
+          background-image: url(img/big-card4.svg);
+        } 
+         
+        &5 {
+          position: absolute;  
+          background: none; 
+          margin-left: 707px;
+          margin-top: 50px;
+        }
+         
+        &6 {
+          background-image: url(img/big-card6.svg);
+        }
+      } 
+       
+      &__item1 {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        margin-left: 50px; 
+      }
+       
+      &__title { 
+        width: 505px; 
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px; 
+        padding-top: 48px; 
+        padding-left: 48px;
+      } 
+       
+      &__text {
+        color: rgb(32, 32, 39); 
+        width: 505px; 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px; 
+        padding-top: 24px; 
+        padding-left: 48px;
+      } 
+       
+      &__link { 
+        display: inline-block;
+        width: 247px;
+        height: 50px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center; 
+        padding-top: 16px; 
+        margin-top: 36px; 
+        margin-left: 48px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      }  
+       
+      &__title1 { 
+        width: 505px; 
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px; 
+        padding-top: 48px; 
+        padding-left: 10px;
+      } 
+       
+      &__text1 {
+        color: rgb(32, 32, 39); 
+        width: 505px; 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px; 
+        padding-top: 24px; 
+        padding-left: 10px;
+      } 
+       
+      &__link1 { 
+        display: inline-block;
+        width: 247px;
+        height: 50px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center; 
+        padding-top: 16px; 
+        margin-top: 36px; 
+        margin-left: 10px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      }
+       
+    }  
+    /*Подвал*/
+    .footer {
+     height: 150px; 
+     background: rgb(189, 237, 53); 
+      
+     &__title { 
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px; 
+      align-items: center; 
+      display: flex; 
+      flex-direction: column; 
+      padding-top: 61px;
+     }
+    }
+     
+    @import 'mobile';
