@@ -439,6 +439,7 @@ a {
     display: flex;
   }
   .games {
+    display: none;
     width: 376px;
     height: 3340px;
   }
