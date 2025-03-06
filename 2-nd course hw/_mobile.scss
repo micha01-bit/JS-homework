@@ -4,9 +4,7 @@
         padding-right: 16px;
       } 
        
-      .top {
-        width: 376px; 
-        height: 648.66px; 
+      .top { 
         background-image: url(img/bigStar-mob.svg), url(img/Star1-mob.svg), url(img/Star3-mob.svg), url(img/Star2-mob.svg), url(img/Star4-mob.svg); 
         background-position: 215px 0px, 45px 100px, 305px 580px, 270px 560px, 95px 70px;
 
@@ -41,6 +39,7 @@
           line-height: 141.69%;  
           margin-left: 25px; 
           margin-top: 36px; 
+          margin-bottom: 131px; 
           padding-top: 18px; 
         } 
       } 
@@ -66,9 +65,8 @@
       } 
        
       .games { 
-        display: none;  
-        width: 376px;
-        height: 3340px; 
+      padding-bottom: 48px; 
+      display: none;   
 
         &__title {
           width: 343px; 
@@ -87,9 +85,8 @@
         } 
          
         &-img { 
-          width: 343px;
           grid-template-columns: repeat(1, 1fr); 
-          row-gap: 24px; 
+          gap: 24px; 
            
           &__item {
             height: 285px; 
@@ -108,7 +105,7 @@
       } 
 
       .mini-games {
-        height: 3740px; 
+         padding-bottom: 48.88px;
 
         &__title {
           width: 250px;
@@ -123,7 +120,7 @@
       .game-cards {
        display: grid; 
        grid-template-columns: repeat(1, 1fr);
-       row-gap: 24px; 
+       gap: 24px; 
         
        &__mob {
         display: block;

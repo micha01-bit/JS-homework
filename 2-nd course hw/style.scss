@@ -23,7 +23,6 @@
       background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
       background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
       background-repeat: no-repeat; 
-      height: 710px;
        
       &__title {
         color: #202027;
@@ -114,7 +113,6 @@
       flex-direction: column;
       align-items: flex-start;
       background: #202027; 
-      height: 1470px; 
       background-image: url(img/blackStar-big.svg), url(img/blackStar-middle1.svg), url(img/blackStar-small1.svg); 
       background-repeat: no-repeat; 
       background-position: 1060px 127px, 40px 822px, 25px 770px; 
@@ -224,10 +222,10 @@
       flex-direction: column;
       align-items: flex-start;
       background-color: #202027; 
-      height: 3500px; 
       background-image: url(img/blackStar-middle.svg), url(img/blackStar-small.svg), url(img/blackStar-middle2.svg), url(img/blackStar-small2.svg); 
       background-repeat: no-repeat; 
-      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px;
+      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px; 
+      padding-bottom: 134px;
        
       &__title {
         color: #FFF;
@@ -243,13 +241,12 @@
       } 
     } 
     /*Карточки мини-игр*/ 
-    .game-cards {
-      width: 1200px; 
-      height: 3160px; 
+    .game-cards { 
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between; 
+      gap: 32px; 
        
       &__mob {
         display: none;
@@ -400,8 +397,7 @@
     }  
     /*Подвал*/
     .footer {
-     height: 150px; 
-     background: rgb(189, 237, 53); 
+     background: rgb(189, 237, 53);  
       
      &__title { 
       color: rgb(0, 0, 0);
@@ -411,7 +407,8 @@
       align-items: center; 
       display: flex; 
       flex-direction: column; 
-      padding-top: 61px;
+      padding-top: 61px; 
+      padding-bottom: 60px;
      }
     }
      
