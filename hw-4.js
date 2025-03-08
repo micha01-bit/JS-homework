@@ -43,66 +43,43 @@ for (let key in obj) {
  } 
   
 //Задание пятое основное 
-for (let n = 1000, num = 0; n > 50; num++) {
-
-n /= 2; 
-
- console.log( n ); 
-
+let n = 1000; 
+let num = 0; 
+while (n >= 50) {
+   n /= 2; 
+   console.log(n); 
+   num++;
 }  
+
+ console.log(`Количество циклов: ${num}`);
  
 //Задание шестое основное 
-for (let friday = 5; friday <= 31; friday++) {
-    
-       if (friday === 5) {
-          console.log('Сегодня пятница, 5-е число. Необходимо подготовить отчет.');
-       } else if (friday === 12) {
-          console.log('Сегодня пятница, 12-е число. Необходимо подготовить отчет.');
-       } else if (friday === 19) {
-          console.log('Сегодня пятница, 19-е число. Необходимо подготовить отчет.');
-       } else if (friday === 26) {
-          console.log('Сегодня пятница, 26-е число. Необходимо подготовить отчет.');
-       }
-    }  
+let dayFriday = 3; 
+let allDay = 31; 
+ 
+for (let i = dayFriday; i <= allDay; i += 7) {
+   console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
+   
+}
      
 //Задание первое дополнительное 
-for (let k = 100, iterations = 0; k > 0; iterations++) {
-  
-k -= 7; 
+let k = 100; 
+let iterations = 0; 
  
-console.log(k)
-
-} 
+while (k >= 0) {
+   k -= 7; 
+   console.log(k); 
+   iterations++;
+}
+ 
+console.log(`Количество циклов: ${iterations}`);
+ 
  
 //Задание второе дополнительное 
-for (let months = 1; months <= 12; months++) {
-    
-    if (months === 1) {
-       console.log('1.Январь');
-    } else if (months === 2) {
-       console.log('2.Февраль');
-    } else if (months === 3) {
-       console.log('3.Март');
-    } else if (months === 4) {
-       console.log('4.Апрель');
-    } else if (months === 5) {
-        console.log('5.Май');
-     } else if (months === 6) {
-        console.log('6.Июнь');
-     } else if (months === 7) {
-        console.log('7.Июль');
-     } else if (months === 8) {
-        console.log('8.Август');
-     } else if (months === 9) {
-        console.log('9.Сентябрь');
-     } else if (months === 10) {
-        console.log('10.Октябрь');
-     } else if (months === 11) {
-        console.log('11.Ноябрь');
-     } else if (months === 12) {
-        console.log('12.Декабрь');
-     }
- } 
+const months = ['1.Январь','2.Февраль','3.Март','4.Апрель','5.Май','6.Июнь', '7.Июль','8.Август','9.Сентябрь','10.Октябрь','11.Ноябрь','12.Декабрь'];
+for (let key in months) {
+   console.log( months[key]);
+}
   
 //Задание третье дополнительное  
 const book = {

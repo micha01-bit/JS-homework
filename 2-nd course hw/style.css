@@ -379,6 +379,9 @@ a {
 }
 
 @media (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -388,21 +391,19 @@ a {
     background-position: 215px 0px, 45px 100px, 305px 580px, 270px 560px, 95px 70px;
   }
   .top__title {
-    width: 262px;
-    height: 196px;
     font-size: 40px;
     line-height: 49px;
     padding-top: 147px;
     text-align: center;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .top__text {
-    width: 296px;
-    height: 60px;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .top__text-weight {
     font-size: 16px;
@@ -439,18 +440,17 @@ a {
     display: none;
   }
   .games__title {
-    width: 343px;
     font-size: 40px;
     line-height: 49px;
     text-align: center;
     padding-top: 48.34px;
+    padding-left: 70px;
   }
   .games__text {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     padding-bottom: 48.61px;
-    width: 343px;
   }
   .games-img {
     grid-template-columns: repeat(1, 1fr);
@@ -470,12 +470,10 @@ a {
     padding-bottom: 48.88px;
   }
   .mini-games__title {
-    width: 250px;
-    height: 49px;
     font-size: 40px;
     line-height: 49px;
     padding-top: 48px;
-    padding-bottom: 40px;
+    padding-bottom: 28px;
   }
   .game-cards {
     display: grid;
@@ -523,7 +521,6 @@ a {
     font-size: 32px;
     line-height: 39px;
     text-align: left;
-    width: 285px;
     padding-left: 30px;
     padding-top: 29px;
   }
@@ -531,7 +528,6 @@ a {
     font-size: 32px;
     line-height: 39px;
     text-align: left;
-    width: 285px;
     padding-left: 30px;
     padding-top: 29px;
   }
@@ -539,15 +535,13 @@ a {
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    width: 285px;
-    padding-left: 30px;
     padding-top: 16px;
+    padding-left: 30px;
   }
   .game-cards__text1 {
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    width: 285px;
     padding-left: 30px;
     padding-top: 16px;
   }
@@ -577,5 +571,9 @@ a {
   .game-cards__item5 {
     margin-left: 45px;
     margin-top: 15px;
+  }
+  .footer__title {
+    font-size: 16px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
