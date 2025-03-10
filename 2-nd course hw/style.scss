@@ -141,7 +141,6 @@
       
       &-img {
         max-height: 1060px;
-        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -191,7 +190,6 @@
       }
       
       &-img__number {
-        width: 111px;
         height: 36px;
         color: rgb(32, 32, 39);
         font-size: 16px;
@@ -202,8 +200,9 @@
         justify-content: center;
         align-items: center;
         margin-top: 32px;
-        margin-left: 32px;
-        margin-bottom: 16px;
+        margin-left: 35px;
+        margin-bottom: 16px; 
+        margin-right: 210px;
       }
       
       &-img__text {
@@ -212,7 +211,6 @@
         font-weight: 700;
         text-align: left;
         padding: 0 36px 32px;
-        max-width: 372px;
       } 
     
     } 
@@ -233,9 +231,7 @@
         font-size: 64px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal; 
-        width: 400px;
-        height: 78px; 
+        line-height: normal;  
         padding-top: 46px; 
         padding-bottom: 72px;
       } 
@@ -255,11 +251,10 @@
       &__container {
        display: flex; 
        flex-wrap: wrap;
-       flex-direction: column; 
-       width: 1200px; 
-       height: 500px; 
+       flex-direction: column;  
        background-color: #FFFFFF; 
-       border-radius: 30px;
+       border-radius: 30px; 
+       height: 500px;
       } 
        
      &__item {
@@ -305,11 +300,20 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center; 
-        margin-left: 50px; 
+        margin-left: 105px;  
       }
        
-      &__title { 
-        width: 505px; 
+      &__item-b {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        margin-left: 115px;  
+      } 
+
+      &__title {  
         color: rgb(32, 32, 39); 
         font-size: 48px;
         font-weight: 700;
@@ -319,13 +323,12 @@
       } 
        
       &__text {
-        color: rgb(32, 32, 39); 
-        width: 505px; 
+        color: rgb(32, 32, 39);  
         font-size: 24px;
         font-weight: 400;
         line-height: 32px; 
         padding-top: 24px; 
-        padding-left: 48px;
+        padding-left: 48px; 
       } 
        
       &__link { 
@@ -349,26 +352,37 @@
           background-color: #fff; 
           color: #000;
         }
-      }  
+      } 
        
-      &__title1 { 
-        width: 505px; 
+      &__content {
+        padding-top: 48px; 
+        padding-right: 150px; 
+        
+      } 
+       
+      &__content1 {
+        padding-top: 48px; 
+        padding-right: 100px;
+      } 
+       
+      &__content2 {
+        padding-top: 48px;
+      }
+       
+      &__title1 {  
         color: rgb(32, 32, 39); 
         font-size: 48px;
         font-weight: 700;
         line-height: 59px; 
-        padding-top: 48px; 
-        padding-left: 10px;
+         
       } 
        
       &__text1 {
-        color: rgb(32, 32, 39); 
-        width: 505px; 
+        color: rgb(32, 32, 39);  
         font-size: 24px;
         font-weight: 400;
         line-height: 32px; 
-        padding-top: 24px; 
-        padding-left: 10px;
+        padding-top: 24px;  
       } 
        
       &__link1 { 
@@ -385,8 +399,7 @@
         cursor: pointer; 
         text-align: center; 
         padding-top: 16px; 
-        margin-top: 36px; 
-        margin-left: 10px; 
+        margin-top: 36px;  
          
         &:hover {
           background-color: #fff; 

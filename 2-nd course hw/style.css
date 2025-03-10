@@ -133,7 +133,6 @@ a {
 }
 .games-img {
   max-height: 1060px;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -178,7 +177,6 @@ a {
   background: url(img/card6.svg);
 }
 .games-img__number {
-  width: 111px;
   height: 36px;
   color: rgb(32, 32, 39);
   font-size: 16px;
@@ -189,8 +187,9 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
-  margin-left: 32px;
+  margin-left: 35px;
   margin-bottom: 16px;
+  margin-right: 210px;
 }
 .games-img__text {
   color: rgb(32, 32, 39);
@@ -198,7 +197,6 @@ a {
   font-weight: 700;
   text-align: left;
   padding: 0 36px 32px;
-  max-width: 372px;
 }
 
 /*Мини-игры*/
@@ -219,8 +217,6 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 400px;
-  height: 78px;
   padding-top: 46px;
   padding-bottom: 72px;
 }
@@ -240,10 +236,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 1200px;
-  height: 500px;
   background-color: #FFFFFF;
   border-radius: 30px;
+  height: 500px;
 }
 .game-cards__item {
   border-radius: 30px;
@@ -281,10 +276,18 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 50px;
+  margin-left: 105px;
+}
+.game-cards__item-b {
+  border-radius: 30px;
+  height: 500px;
+  width: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 115px;
 }
 .game-cards__title {
-  width: 505px;
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
@@ -294,7 +297,6 @@ a {
 }
 .game-cards__text {
   color: rgb(32, 32, 39);
-  width: 505px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -322,23 +324,29 @@ a {
   background-color: #fff;
   color: #000;
 }
+.game-cards__content {
+  padding-top: 48px;
+  padding-right: 150px;
+}
+.game-cards__content1 {
+  padding-top: 48px;
+  padding-right: 100px;
+}
+.game-cards__content2 {
+  padding-top: 48px;
+}
 .game-cards__title1 {
-  width: 505px;
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
-  padding-top: 48px;
-  padding-left: 10px;
 }
 .game-cards__text1 {
   color: rgb(32, 32, 39);
-  width: 505px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   padding-top: 24px;
-  padding-left: 10px;
 }
 .game-cards__link1 {
   display: inline-block;
@@ -355,7 +363,6 @@ a {
   text-align: center;
   padding-top: 16px;
   margin-top: 36px;
-  margin-left: 10px;
 }
 .game-cards__link1:hover {
   background-color: #fff;
@@ -473,7 +480,7 @@ a {
     font-size: 40px;
     line-height: 49px;
     padding-top: 48px;
-    padding-bottom: 28px;
+    padding-bottom: 48px;
   }
   .game-cards {
     display: grid;
@@ -487,14 +494,12 @@ a {
     display: none;
   }
   .game-cards__container {
-    width: 343px;
     height: 567.63px;
   }
   .game-cards__container1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 343px;
     height: 528.63px;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -503,7 +508,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 343px;
     height: 606.63px;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -512,7 +516,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 343px;
     height: 626.63px;
     background-color: #FFFFFF;
     border-radius: 30px;
