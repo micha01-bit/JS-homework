@@ -1,0 +1,107 @@
+@media (max-width: 767px) {
+      .center {
+        padding-left: 16px; 
+        padding-right: 16px;
+      } 
+       
+      .top {
+        width: 376px; 
+        height: 648.66px; 
+        background-image: url(img/bigStar-mob.svg), url(img/Star1-mob.svg), url(img/Star3-mob.svg), url(img/Star2-mob.svg), url(img/Star4-mob.svg); 
+        background-position: 215px 0px, 45px 100px, 305px 580px, 270px 560px, 95px 70px;
+
+        &__title {
+          width: 262px;
+          height: 196px; 
+          font-size: 40px;
+          line-height: 49px; 
+          padding-top: 147px; 
+          text-align: center; 
+          padding-left: 40px;
+        } 
+
+        &__text {
+          width: 296px;
+          height: 60px; 
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center; 
+          padding-left: 20px;
+        } 
+         
+        &__text-weight {
+          font-size: 16px;
+          line-height: 20px;
+        } 
+         
+        &__link {
+          width: 285px;
+          height: 41px; 
+          font-size: 16px;
+          line-height: 141.69%;  
+          margin-left: 25px; 
+          margin-top: 36px; 
+          padding-top: 18px; 
+        } 
+      } 
+       
+      .scrollbar {
+        width: 1717.4px;
+        height: 51.34px; 
+         
+        &__text {
+          font-size: 16px; 
+          line-height: 110%; 
+          padding-right: 27.4px;
+          padding-left: 27.4px
+        } 
+         
+        &-dec {
+          display: none;
+        } 
+         
+        &-mob {
+          display: flex;
+        }
+      } 
+       
+      .games {  
+        width: 376px;
+        height: 3340px;
+        &__title {
+          width: 343px; 
+          font-size: 40px; 
+          line-height: 49px; 
+          text-align: center; 
+          padding-top: 48.34px; 
+        } 
+         
+        &__text {
+          font-size: 16px; 
+          line-height: 20px; 
+          text-align: center; 
+          padding-bottom: 48.61px; 
+          width: 343px;
+        } 
+         
+        &-img { 
+          width: 343px;
+          grid-template-columns: repeat(1, 1fr); 
+          row-gap: 24px; 
+           
+          &__item {
+            height: 285px; 
+          } 
+           
+          &__card_top {
+            margin-top: 0;
+          } 
+        }  
+         
+        &-img__item_4 {
+          padding-left: 45px;
+          padding-top: 20px;
+        }
+      }
+    }
+     
