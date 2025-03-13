@@ -4,7 +4,8 @@
      } 
        
     body {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat", sans-serif; 
+        overflow-x: hidden; 
       } 
     
     a {
@@ -22,7 +23,7 @@
       background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
       background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
       background-repeat: no-repeat; 
-       
+      height: 710px;
        
       &__title {
         color: #202027;
@@ -90,7 +91,6 @@
       backdrop-filter: blur(50px);
       background: rgb(188, 236, 48);
       flex-wrap: wrap;
-      overflow: hidden;
       max-height: 87px; 
        
       &__text {
@@ -108,17 +108,20 @@
       }
     
     }
-    
+    /*Об играх*/
     .games {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       background: #202027; 
       height: 1470px; 
-       
+      background-image: url(img/blackStar-big.svg), url(img/blackStar-middle1.svg), url(img/blackStar-small1.svg); 
+      background-repeat: no-repeat; 
+      background-position: 1060px 127px, 40px 822px, 25px 770px; 
+
       &__title {
         color: #FFF;
-        font-family: Montserrat;
+        font-family: "Montserrat",sans-serif;
         font-size: 64px;
         font-style: normal;
         font-weight: 700;
@@ -168,24 +171,24 @@
         margin-top: -40px;
       }
       
-      &-img__item_1 {
+      &-img__item1 {
         background: url(img/card1.svg);
       }
-      &-img__item_2 {
+      &-img__item2 {
         background: url(img/card2.svg);
       }
-      &-img__item_3{
+      &-img__item3{
         background: url(img/card3.svg);
       }
-      &-img__item_4{
+      &-img__item4{
         position: absolute; 
         padding-left: 65px; 
         padding-top: 30px;
       }
-      &-img__item_5{
+      &-img__item5{
         background: url(img/card5.svg);
       }
-      &-img__item_6{
+      &-img__item6{
         background: url(img/card6.svg);
       }
       
@@ -214,6 +217,198 @@
         max-width: 372px;
       } 
     
+    } 
+    /*Мини-игры*/ 
+    .mini-games { 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #202027; 
+      height: 3500px; 
+      background-image: url(img/blackStar-middle.svg), url(img/blackStar-small.svg), url(img/blackStar-middle2.svg), url(img/blackStar-small2.svg); 
+      background-repeat: no-repeat; 
+      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px;
+       
+      &__title {
+        color: #FFF;
+        font-family: "Montserrat",sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        width: 400px;
+        height: 78px; 
+        padding-top: 46px; 
+        padding-bottom: 72px;
+      } 
+    } 
+    /*Карточки мини-игр*/ 
+    .game-cards {
+      width: 1200px; 
+      height: 3160px; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between; 
+       
+      &__container {
+       display: flex; 
+       flex-wrap: wrap;
+       flex-direction: column; 
+       min-width: 1200px; 
+       height: 500px; 
+       background-color: #FFFFFF; 
+       border-radius: 30px;
+      } 
+       
+     &__item {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+         
+        &-a {
+          background-image: url(img/big-card1.svg); 
+        } 
+         
+        &2 {
+          background-image: url(img/big-card2.svg);
+        } 
+         
+        &3 {
+          background-image: url(img/big-card3.svg);
+        } 
+         
+        &4 {
+          background-image: url(img/big-card4.svg);
+        } 
+         
+        &5 {
+          position: absolute;  
+          background: none; 
+          margin-left: 707px;
+          margin-top: 50px;
+        }
+         
+        &6 {
+          background-image: url(img/big-card6.svg);
+        }
+      } 
+       
+      &__item1 {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        margin-left: 50px; 
+      }
+       
+      &__title { 
+        width: 505px; 
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px; 
+        padding-top: 48px; 
+        padding-left: 48px;
+      } 
+       
+      &__text {
+        color: rgb(32, 32, 39); 
+        width: 505px; 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px; 
+        padding-top: 24px; 
+        padding-left: 48px;
+      } 
+       
+      &__link { 
+        display: inline-block;
+        width: 247px;
+        height: 50px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center; 
+        padding-top: 16px; 
+        margin-top: 36px; 
+        margin-left: 48px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      }  
+       
+      &__title1 { 
+        width: 505px; 
+        color: rgb(32, 32, 39); 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px; 
+        padding-top: 48px; 
+        padding-left: 10px;
+      } 
+       
+      &__text1 {
+        color: rgb(32, 32, 39); 
+        width: 505px; 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px; 
+        padding-top: 24px; 
+        padding-left: 10px;
+      } 
+       
+      &__link1 { 
+        display: inline-block;
+        width: 247px;
+        height: 50px; 
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #FFFFFF; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%; 
+        cursor: pointer; 
+        text-align: center; 
+        padding-top: 16px; 
+        margin-top: 36px; 
+        margin-left: 10px; 
+         
+        &:hover {
+          background-color: #fff; 
+          color: #000;
+        }
+      }
+       
+    }  
+    /*Подвал*/
+    .footer {
+     height: 150px; 
+     background: rgb(189, 237, 53); 
+      
+     &__title { 
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px; 
+      align-items: center; 
+      display: flex; 
+      flex-direction: column; 
+      padding-top: 61px;
+     }
     }
      
     @import 'mobile';
