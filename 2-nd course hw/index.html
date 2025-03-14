@@ -70,34 +70,34 @@
     Игры несложные — в них может поиграть каждый. <br>
     Все игры доступны для пользования.</p>
     <div class="games-img">
-        <a class="games-img__card"  href="#">
+        <a class="games-img__card"  href="#div16">
             <div class="games-img__item games-img__item1"></div>
             <p class="games-img__number">Игра № 1</p>
             <p class="games-img__text">Угадай число</p>
         </a>
-        <a class="games-img__card"  href="#">
+        <a class="games-img__card"  href="#div20">
             <div class="games-img__item games-img__item2"></div>
             <p class="games-img__number">Игра № 2</p>
             <p class="games-img__text">Простая арифметика</p>
         </a>
-        <a class="games-img__card"  href="#">
+        <a class="games-img__card"  href="#div24">
             <div class="games-img__item games-img__item3"></div>
             <p class="games-img__number">Игра № 3</p>
             <p class="games-img__text">Переверни текст</p>
         </a>
-        <a class="games-img__card games-img__card_top" href="#">
+        <a class="games-img__card games-img__card_top" href="#div32">
             <img class="games-img__item" src="img/card4.svg" alt="rock, scissors, paper"> 
             <img class="games-img__item4" src="img/stone.png" alt="stone">
             <p class="games-img__number">Игра № 4</p>
             <p class="games-img__text">Камень, ножницы,<br>бумага</p>   
               
         </a>
-        <a class="games-img__card"  href="#">
+        <a class="games-img__card"  href="#div28">
             <div class="games-img__item games-img__item5"></div>
             <p class="games-img__number">Игра № 5</p>
             <p class="games-img__text">Простая викторина</p>
         </a>
-        <a class="games-img__card games-img__card_top" href="#">
+        <a class="games-img__card games-img__card_top" href="#div36">
             <div class="games-img__item games-img__item6"></div>
             <p class="games-img__number">Игра № 6</p>
             <p class="games-img__text">Генератор случайных цветов</p>
@@ -110,12 +110,13 @@
  
 <div class="game-cards"> 
 
-    <div class="game-cards__dectop"> 
+    <div class="game-cards__dectop" id="div16"> 
       <article class="game-cards__container"> 
         <p class="game-cards__title">Угадай число</p> 
         <p class="game-cards__text">Попробуй угадать случайное число<br>от 1 до 100.</p> 
         <nav> 
-          <a class="game-cards__link"  href="#">Играть!</a>
+          <a class="game-cards__link" onclick="playGame()">Играть!</a> 
+          <div id="gameContainer"></div>
         </nav> 
         <div class="game-cards__item1 game-cards__item-a"></div> 
         </article>
@@ -132,7 +133,7 @@
         </article>
     </div>
 
-    <div class="game-cards__dectop"> 
+    <div class="game-cards__dectop" id="div20"> 
       <article class="game-cards__container"> 
         <div class="game-cards__item game-cards__item2"></div> 
         <div class="game-cards__content">
@@ -156,7 +157,7 @@
       </article>
     </div>
      
-    <div class="game-cards__dectop"> 
+    <div class="game-cards__dectop" id="div24"> 
       <article class="game-cards__container"> 
         <p class="game-cards__title">Переверни текст</p> 
         <p class="game-cards__text">Попробуй ввести текст, который<br>будет перевернут.</p> 
@@ -178,7 +179,7 @@
         </article>
     </div>
      
-    <div class="game-cards__dectop"> 
+    <div class="game-cards__dectop" id="div28"> 
       <article class="game-cards__container"> 
         <div class="game-cards__item game-cards__item4"></div>
      <div class="game-cards__content1"> 
@@ -202,7 +203,7 @@
       </article>
     </div>
      
-   <div class="game-cards__dectop"> 
+   <div class="game-cards__dectop" id="div32"> 
     <article class="game-cards__container">  
       <p class="game-cards__title">Камень,<br>ножницы,<br>бумага</p> 
       <p class="game-cards__text">Сыграй в популярную игру против<br>компьютера.</p> 
@@ -226,7 +227,7 @@
       </article>
    </div>
      
-   <div class="game-cards__dectop"> 
+   <div class="game-cards__dectop" id="div36"> 
     <article class="game-cards__container"> 
       <div class="game-cards__item game-cards__item6"></div>
     <div class="game-cards__content2"> 
@@ -257,5 +258,6 @@
 <footer class="footer"> <!--Подвал-->
   <div class="footer__title">Все права защищены.</div>
 </footer> 
+<script src="first-game.js"></script> 
 </body>
 </html>

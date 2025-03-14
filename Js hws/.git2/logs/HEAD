@@ -1,0 +1,34 @@
+0000000000000000000000000000000000000000 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1739006002 +0700	commit (initial): first commit
+289373fa4776ba8fbe2b74f5365f8f115b40283a 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1739006864 +0700	checkout: moving from main to hw-2
+289373fa4776ba8fbe2b74f5365f8f115b40283a 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1739007131 +0700	checkout: moving from hw-2 to hw-2
+289373fa4776ba8fbe2b74f5365f8f115b40283a 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1739007145 +0700	checkout: moving from hw-2 to main
+289373fa4776ba8fbe2b74f5365f8f115b40283a 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1739442120 +0700	checkout: moving from main to hw-3
+289373fa4776ba8fbe2b74f5365f8f115b40283a 4f6c53aaa8becbae148adbf5b97c9193cfca8f15 micha01-bit <ebespalov05@gmail.com> 1739456803 +0700	commit: completed hw-3 on js
+4f6c53aaa8becbae148adbf5b97c9193cfca8f15 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1739456845 +0700	checkout: moving from hw-3 to main
+289373fa4776ba8fbe2b74f5365f8f115b40283a 4f6c53aaa8becbae148adbf5b97c9193cfca8f15 micha01-bit <ebespalov05@gmail.com> 1739456905 +0700	checkout: moving from main to hw-3
+4f6c53aaa8becbae148adbf5b97c9193cfca8f15 4f6c53aaa8becbae148adbf5b97c9193cfca8f15 micha01-bit <ebespalov05@gmail.com> 1741166156 +0700	checkout: moving from hw-3 to hw4
+4f6c53aaa8becbae148adbf5b97c9193cfca8f15 36988503040c8d2179bc81cff19d0bfacab58e9e micha01-bit <ebespalov05@gmail.com> 1741166217 +0700	commit: hw-4 JS
+36988503040c8d2179bc81cff19d0bfacab58e9e 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1741166263 +0700	checkout: moving from hw4 to main
+289373fa4776ba8fbe2b74f5365f8f115b40283a 4f6c53aaa8becbae148adbf5b97c9193cfca8f15 micha01-bit <ebespalov05@gmail.com> 1741166269 +0700	checkout: moving from main to hw-3
+4f6c53aaa8becbae148adbf5b97c9193cfca8f15 36988503040c8d2179bc81cff19d0bfacab58e9e micha01-bit <ebespalov05@gmail.com> 1741166273 +0700	checkout: moving from hw-3 to hw4
+36988503040c8d2179bc81cff19d0bfacab58e9e 36988503040c8d2179bc81cff19d0bfacab58e9e micha01-bit <ebespalov05@gmail.com> 1741166750 +0700	checkout: moving from hw4 to hw4
+36988503040c8d2179bc81cff19d0bfacab58e9e 4f6c53aaa8becbae148adbf5b97c9193cfca8f15 micha01-bit <ebespalov05@gmail.com> 1741166756 +0700	checkout: moving from hw4 to hw-3
+4f6c53aaa8becbae148adbf5b97c9193cfca8f15 36988503040c8d2179bc81cff19d0bfacab58e9e micha01-bit <ebespalov05@gmail.com> 1741166772 +0700	checkout: moving from hw-3 to hw4
+36988503040c8d2179bc81cff19d0bfacab58e9e 4f6c53aaa8becbae148adbf5b97c9193cfca8f15 micha01-bit <ebespalov05@gmail.com> 1741166781 +0700	checkout: moving from hw4 to hw-3
+4f6c53aaa8becbae148adbf5b97c9193cfca8f15 36988503040c8d2179bc81cff19d0bfacab58e9e micha01-bit <ebespalov05@gmail.com> 1741166799 +0700	checkout: moving from hw-3 to hw4
+36988503040c8d2179bc81cff19d0bfacab58e9e 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1741166817 +0700	checkout: moving from hw4 to main
+289373fa4776ba8fbe2b74f5365f8f115b40283a 36988503040c8d2179bc81cff19d0bfacab58e9e micha01-bit <ebespalov05@gmail.com> 1741166840 +0700	checkout: moving from main to hw4
+36988503040c8d2179bc81cff19d0bfacab58e9e b4cdc38e80d9c58689616db8255ac546f8c823bb micha01-bit <ebespalov05@gmail.com> 1741167760 +0700	commit: added hw4
+b4cdc38e80d9c58689616db8255ac546f8c823bb a6fe2d97c1189a15c2959f1d77b84afbf0b28cb3 micha01-bit <ebespalov05@gmail.com> 1741167898 +0700	commit: hw-4 of JS
+a6fe2d97c1189a15c2959f1d77b84afbf0b28cb3 585d0fdbdbddbedd28e86b6ff201e9758dbd7eb1 micha01-bit <ebespalov05@gmail.com> 1741267710 +0700	commit: revision hw-4
+585d0fdbdbddbedd28e86b6ff201e9758dbd7eb1 585d0fdbdbddbedd28e86b6ff201e9758dbd7eb1 micha01-bit <ebespalov05@gmail.com> 1741267760 +0700	checkout: moving from hw4 to hw4
+585d0fdbdbddbedd28e86b6ff201e9758dbd7eb1 585d0fdbdbddbedd28e86b6ff201e9758dbd7eb1 micha01-bit <ebespalov05@gmail.com> 1741268789 +0700	checkout: moving from hw4 to hw4
+585d0fdbdbddbedd28e86b6ff201e9758dbd7eb1 cdfb9df61b7e03dab56697751756f0d8a08d76cf micha01-bit <ebespalov05@gmail.com> 1741426510 +0700	commit: revision hw4
+cdfb9df61b7e03dab56697751756f0d8a08d76cf cdfb9df61b7e03dab56697751756f0d8a08d76cf micha01-bit <ebespalov05@gmail.com> 1741843337 +0700	checkout: moving from hw4 to hw5
+cdfb9df61b7e03dab56697751756f0d8a08d76cf cdfb9df61b7e03dab56697751756f0d8a08d76cf micha01-bit <ebespalov05@gmail.com> 1741843611 +0700	checkout: moving from hw5 to hw4
+cdfb9df61b7e03dab56697751756f0d8a08d76cf 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1741848163 +0700	checkout: moving from hw4 to main
+289373fa4776ba8fbe2b74f5365f8f115b40283a cdfb9df61b7e03dab56697751756f0d8a08d76cf micha01-bit <ebespalov05@gmail.com> 1741848278 +0700	checkout: moving from main to hw5
+cdfb9df61b7e03dab56697751756f0d8a08d76cf 6e4e2e304c4e9c9149b185a8d7a707e087254211 micha01-bit <ebespalov05@gmail.com> 1741848320 +0700	commit: added hw-5.js
+6e4e2e304c4e9c9149b185a8d7a707e087254211 289373fa4776ba8fbe2b74f5365f8f115b40283a micha01-bit <ebespalov05@gmail.com> 1741848338 +0700	checkout: moving from hw5 to main
+289373fa4776ba8fbe2b74f5365f8f115b40283a 6e4e2e304c4e9c9149b185a8d7a707e087254211 micha01-bit <ebespalov05@gmail.com> 1741848356 +0700	checkout: moving from main to hw5
+6e4e2e304c4e9c9149b185a8d7a707e087254211 cae11e48048a04c5030a58b04ff9a1273a2bda09 micha01-bit <ebespalov05@gmail.com> 1741875296 +0700	commit: hw-5
