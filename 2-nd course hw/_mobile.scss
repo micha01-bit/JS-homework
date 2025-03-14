@@ -1,32 +1,31 @@
-@media (max-width: 767px) {
-      .center {
+@media (max-width: 767px) {    
+   
+  html { overflow-x: hidden; }
+   
+  .center {
         padding-left: 16px; 
         padding-right: 16px;
-      } 
+      }  
        
-      .top {
-        width: 376px; 
-        height: 648.66px; 
+      .top { 
         background-image: url(img/bigStar-mob.svg), url(img/Star1-mob.svg), url(img/Star3-mob.svg), url(img/Star2-mob.svg), url(img/Star4-mob.svg); 
         background-position: 215px 0px, 45px 100px, 305px 580px, 270px 560px, 95px 70px;
 
-        &__title {
-          width: 262px;
-          height: 196px; 
+        &__title { 
           font-size: 40px;
           line-height: 49px; 
           padding-top: 147px; 
           text-align: center; 
-          padding-left: 40px;
+          padding-left: 20px; 
+          padding-right: 20px;
         } 
 
-        &__text {
-          width: 296px;
-          height: 60px; 
+        &__text { 
           font-size: 16px;
           line-height: 20px;
           text-align: center; 
-          padding-left: 20px;
+          padding-left: 10px; 
+          padding-right: 10px;
         } 
          
         &__text-weight {
@@ -41,13 +40,14 @@
           line-height: 141.69%;  
           margin-left: 25px; 
           margin-top: 36px; 
+          margin-bottom: 131px; 
           padding-top: 18px; 
         } 
-      } 
+      }
        
       .scrollbar {
         width: 1717.4px;
-        height: 51.34px; 
+        height: 51.34px;  
          
         &__text {
           font-size: 16px; 
@@ -61,19 +61,20 @@
         } 
          
         &-mob {
-          display: flex;
+          display: flex; 
         }
       } 
        
-      .games {  
-        width: 376px;
-        height: 3340px;
-        &__title {
-          width: 343px; 
+      .games { 
+      padding-bottom: 48px; 
+      display: none;
+
+        &__title { 
           font-size: 40px; 
           line-height: 49px; 
           text-align: center; 
           padding-top: 48.34px; 
+          padding-left: 70px; 
         } 
          
         &__text {
@@ -81,13 +82,11 @@
           line-height: 20px; 
           text-align: center; 
           padding-bottom: 48.61px; 
-          width: 343px;
         } 
          
         &-img { 
-          width: 343px;
           grid-template-columns: repeat(1, 1fr); 
-          row-gap: 24px; 
+          gap: 24px; 
            
           &__item {
             height: 285px; 
@@ -96,12 +95,145 @@
           &__card_top {
             margin-top: 0;
           } 
+          
+          &__item4 {
+            padding-left: 45px;
+            padding-top: 20px;
+          }
         }  
          
-        &-img__item_4 {
-          padding-left: 45px;
-          padding-top: 20px;
+      } 
+
+      .mini-games {
+         padding-bottom: 48.88px;
+
+        &__title {
+          font-size: 40px; 
+          line-height: 49px; 
+          padding-top: 48px; 
+          padding-bottom: 48px;
+        }
+      } 
+      
+      .game-cards {
+       display: grid; 
+       grid-template-columns: repeat(1, 1fr);
+       gap: 24px; 
+        
+       &__mob {
+        display: block;
+       } 
+        
+       &__dectop {
+        display: none;
+       }
+
+       &__container {
+        height: 567.63px;
+       } 
+        
+       &__container1 {
+        display: flex; 
+       flex-wrap: wrap;
+       flex-direction: column;  
+       height: 528.63px; 
+       background-color: #FFFFFF; 
+       border-radius: 30px;
+       } 
+        
+       &__container2 {
+        display: flex; 
+       flex-wrap: wrap;
+       flex-direction: column; 
+       height: 606.63px; 
+       background-color: #FFFFFF; 
+       border-radius: 30px;
+       } 
+        
+       &__container3 {
+        display: flex; 
+       flex-wrap: wrap;
+       flex-direction: column;  
+       height: 626.63px; 
+       background-color: #FFFFFF; 
+       border-radius: 30px;
+       }
+
+       &__title {
+        font-size: 32px; 
+        line-height: 39px; 
+        text-align: left; 
+        padding-left: 30px; 
+        padding-top: 29px;
+       }  
+
+       &__title1 {
+        font-size: 32px; 
+        line-height: 39px; 
+        text-align: left; 
+        padding-left: 30px; 
+        padding-top: 29px;
+       } 
+        
+       &__text {
+        font-size: 16px; 
+        line-height: 20px; 
+        text-align: left; 
+        padding-top: 16px; 
+        padding-left: 30px;
+       } 
+
+       &__text1 {
+        font-size: 16px; 
+        line-height: 20px; 
+        text-align: left; 
+        padding-left: 30px; 
+        padding-top: 16px;
+       } 
+        
+       &__link {
+        width: 285px; 
+        height: 39px; 
+        font-size: 16px; 
+        margin-left: 30px; 
+        margin-top: 32px;
+       }  
+        
+       &__link1 {
+        width: 285px; 
+        height: 39px; 
+        font-size: 16px; 
+        margin-left: 30px; 
+        margin-top: 32px;
+       } 
+
+      &__item1 {
+        width: 343px; 
+        height: 285px; 
+        margin-left: 0;
+      } 
+       
+      &__item {
+        width: 343px; 
+        height: 285px;
+      } 
+       
+      &__item5 {
+        margin-left: 45px; 
+        margin-top: 15px;
+      }
+
+      } 
+       
+      .footer {
+         
+        &__title {
+          font-size: 16px; 
+          line-height: 20px;
         }
       }
-    }
+    
+    } 
+
+  
      

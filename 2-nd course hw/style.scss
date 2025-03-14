@@ -23,17 +23,13 @@
       background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
       background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
       background-repeat: no-repeat; 
-      height: 710px;
        
       &__title {
         color: #202027;
         font-family: "Montserrat", sans-serif;
         font-size: 64px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
-        max-width: 769px;
-        max-height: 358px;
+        line-height: 78px;  
         padding-top: 196px;
       } 
        
@@ -45,7 +41,6 @@
         font-weight: 400;
         line-height: 32px;
         padding-top: 24px;
-        max-width: 720px;
       } 
        
       &__text-weight {
@@ -114,7 +109,6 @@
       flex-direction: column;
       align-items: flex-start;
       background: #202027; 
-      height: 1470px; 
       background-image: url(img/blackStar-big.svg), url(img/blackStar-middle1.svg), url(img/blackStar-small1.svg); 
       background-repeat: no-repeat; 
       background-position: 1060px 127px, 40px 822px, 25px 770px; 
@@ -136,14 +130,11 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
-        line-height: 32px; 
-        max-width: 788px; 
+        line-height: 32px;  
         padding-bottom: 72px;
       }
       
       &-img {
-        max-height: 1060px;
-        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -193,7 +184,6 @@
       }
       
       &-img__number {
-        width: 111px;
         height: 36px;
         color: rgb(32, 32, 39);
         font-size: 16px;
@@ -204,8 +194,9 @@
         justify-content: center;
         align-items: center;
         margin-top: 32px;
-        margin-left: 32px;
-        margin-bottom: 16px;
+        margin-left: 35px;
+        margin-bottom: 16px; 
+        margin-right: 210px;
       }
       
       &-img__text {
@@ -214,7 +205,6 @@
         font-weight: 700;
         text-align: left;
         padding: 0 36px 32px;
-        max-width: 372px;
       } 
     
     } 
@@ -224,10 +214,10 @@
       flex-direction: column;
       align-items: flex-start;
       background-color: #202027; 
-      height: 3500px; 
       background-image: url(img/blackStar-middle.svg), url(img/blackStar-small.svg), url(img/blackStar-middle2.svg), url(img/blackStar-small2.svg); 
       background-repeat: no-repeat; 
-      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px;
+      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px; 
+      padding-bottom: 134px;
        
       &__title {
         color: #FFF;
@@ -235,30 +225,30 @@
         font-size: 64px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal; 
-        width: 400px;
-        height: 78px; 
+        line-height: normal;  
         padding-top: 46px; 
         padding-bottom: 72px;
       } 
     } 
     /*Карточки мини-игр*/ 
-    .game-cards {
-      width: 1200px; 
-      height: 3160px; 
+    .game-cards { 
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between; 
+      gap: 32px; 
+       
+      &__mob {
+        display: none;
+      }
        
       &__container {
        display: flex; 
        flex-wrap: wrap;
-       flex-direction: column; 
-       min-width: 1200px; 
-       height: 500px; 
+       flex-direction: column;  
        background-color: #FFFFFF; 
-       border-radius: 30px;
+       border-radius: 30px; 
+       height: 500px;
       } 
        
      &__item {
@@ -304,11 +294,20 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center; 
-        margin-left: 50px; 
+        margin-left: 105px;  
       }
        
-      &__title { 
-        width: 505px; 
+      &__item-b {
+        border-radius: 30px;
+        height: 500px; 
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        margin-left: 115px;  
+      } 
+
+      &__title {  
         color: rgb(32, 32, 39); 
         font-size: 48px;
         font-weight: 700;
@@ -318,13 +317,12 @@
       } 
        
       &__text {
-        color: rgb(32, 32, 39); 
-        width: 505px; 
+        color: rgb(32, 32, 39);  
         font-size: 24px;
         font-weight: 400;
         line-height: 32px; 
         padding-top: 24px; 
-        padding-left: 48px;
+        padding-left: 48px; 
       } 
        
       &__link { 
@@ -348,26 +346,37 @@
           background-color: #fff; 
           color: #000;
         }
-      }  
+      } 
        
-      &__title1 { 
-        width: 505px; 
+      &__content {
+        padding-top: 48px; 
+        padding-right: 150px; 
+        
+      } 
+       
+      &__content1 {
+        padding-top: 48px; 
+        padding-right: 100px;
+      } 
+       
+      &__content2 {
+        padding-top: 48px;
+      }
+       
+      &__title1 {  
         color: rgb(32, 32, 39); 
         font-size: 48px;
         font-weight: 700;
         line-height: 59px; 
-        padding-top: 48px; 
-        padding-left: 10px;
+         
       } 
        
       &__text1 {
-        color: rgb(32, 32, 39); 
-        width: 505px; 
+        color: rgb(32, 32, 39);  
         font-size: 24px;
         font-weight: 400;
         line-height: 32px; 
-        padding-top: 24px; 
-        padding-left: 10px;
+        padding-top: 24px;  
       } 
        
       &__link1 { 
@@ -384,8 +393,7 @@
         cursor: pointer; 
         text-align: center; 
         padding-top: 16px; 
-        margin-top: 36px; 
-        margin-left: 10px; 
+        margin-top: 36px;  
          
         &:hover {
           background-color: #fff; 
@@ -396,8 +404,7 @@
     }  
     /*Подвал*/
     .footer {
-     height: 150px; 
-     background: rgb(189, 237, 53); 
+     background: rgb(189, 237, 53);  
       
      &__title { 
       color: rgb(0, 0, 0);
@@ -407,7 +414,8 @@
       align-items: center; 
       display: flex; 
       flex-direction: column; 
-      padding-top: 61px;
+      padding-top: 61px; 
+      padding-bottom: 60px;
      }
     }
      
