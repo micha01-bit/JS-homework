@@ -82,7 +82,17 @@ a {
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
   flex-wrap: wrap;
-  max-height: 87px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 16s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .scrollbar__text {
   font-family: "Montserrat";
@@ -129,7 +139,6 @@ a {
 .games-img {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 32px;
   align-items: start;
 }
@@ -139,6 +148,10 @@ a {
   grid-column: span 4;
   background-color: #FFFFFF;
   border-radius: 30px;
+  transition: all 0.3s;
+}
+.games-img__card:hover {
+  transform: scale(1.1);
 }
 .games-img__item {
   border-radius: 30px;
