@@ -47,12 +47,11 @@ console.log(array3);
  
 //Задача 6 
 const arr2 = [9, 8, 7, 'a', 6, 5];
+ 
+const filteredArray = arr2.filter(item => typeof item !== 'string');
+const sortedArray = filteredArray.sort((a, b) => a - b);
 
-const sortedArray = arr2.sort((a, b) => a - b);
-
-const filteredArray = sortedArray.filter(item => typeof item !== 'string');
-
-console.log(filteredArray);  
+console.log(sortedArray);  
 
 //Задача 7 
 const arr3 = [9, 8, 7, 6, 5]; 
@@ -67,20 +66,16 @@ if (arr3.includes(guessedNumber)) {
 } 
 
 //Задание 8 
-const str = 'abcdef';
+let str = 'abcdef';
+str = str.split('');
+str.reverse();
+str = str.join('');
 
-const arr4 = str.split('');
-const reversedArr = arr4.reverse();
-const reversedStr = reversedArr.join('');
-
-console.log(reversedStr); 
+console.log(str); 
 
 //Задание 9 
-const array6 = [[1, 2, 3], [4, 5, 6]];
-
-const flattenedArray = [...array6[0], ...array6[1]];
-
-console.log(flattenedArray);
+const array6 = [[1, 2, 3], [4, 5, 6]]; 
+console.log(array6.flat());
  
 //Задание 10 
 const array7 = Array.from({ length: 10 }, () => Math.floor(Math.random() * 10) + 1);
