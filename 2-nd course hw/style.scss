@@ -1,7 +1,7 @@
 * {
         margin: 0;
         padding: 0;
-     } 
+     }  
        
     body {
         font-family: "Montserrat", sans-serif; 
@@ -10,7 +10,7 @@
     
     a {
         text-decoration: none;
-      }
+      } 
       
     .center {
         padding-left: calc(50% - 600px);
@@ -80,19 +80,20 @@
     /*Полоса прокрутки*/
     .scrollbar {
       width: 3220px;
-      height: 90px;
-      display: flex;
+      height: 90px; 
+      display: flex; 
       align-items: center;
       backdrop-filter: blur(50px);
       background: rgb(188, 236, 48);
       flex-wrap: wrap; 
       overflow: hidden; 
-      white-space: nowrap; 
-      animation: scroll 16s linear infinite; 
+      white-space: nowrap;
+      animation: scroll 16s linear infinite;
+      
        
       @keyframes scroll {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
+        100% { transform: translateX(-50%); }
     }
        
       &__text {
@@ -108,8 +109,8 @@
       &-mob {
         display: none;
       }
-    
-    }
+    } 
+
     /*Об играх*/
     .games {
       display: flex;
