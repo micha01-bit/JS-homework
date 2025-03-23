@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Какой-то текст написан.</h1> 
+    <button id="change-text">Добавить элемент</button>
+
+    <script>  
+   const changeTextEl = document.querySelector('#change-text'); 
+ 
+   changeTextEl.addEventListener('click', function() { 
+    const newDiv = document.createElement('div');
+    newDiv.textContent = 'Новый абзац';
+    document.body.appendChild(newDiv);
+  });
+   
+    </script>
+</body>
+</html>
