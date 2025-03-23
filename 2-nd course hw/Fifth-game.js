@@ -26,7 +26,7 @@ function playGame2() {
         result = 'Компьютер победил.';
     }
 
-    console.log(`Ваш выбор: ${userChoice}`);
-    console.log(`Выбор компьютера: ${computerChoice}`);
-    console.log(result);
+    alert(`Ваш выбор: ${userChoice}`);
+    alert(`Выбор компьютера: ${computerChoice}`);
+    alert(result);
 }
