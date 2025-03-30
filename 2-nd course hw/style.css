@@ -7,6 +7,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  transition: background-color 0.5s;
 }
 
 a {
@@ -216,6 +217,7 @@ a {
   background-repeat: no-repeat;
   background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px;
   padding-bottom: 134px;
+  transition: background-color 0.5s;
 }
 .mini-games__title {
   color: #FFF;
