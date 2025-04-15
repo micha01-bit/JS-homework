@@ -2,6 +2,8 @@
         margin: 0;
         padding: 0;
      }  
+      
+     html { overflow-x: hidden; }
        
     body {
         font-family: "Montserrat", sans-serif; 
@@ -345,4 +347,4 @@
     }
      
     @import 'tablet';
-    @import 'mobile' 
+    @import 'mobile';

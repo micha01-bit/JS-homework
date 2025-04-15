@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -315,6 +319,9 @@ a {
 }
 
 @media (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
@@ -346,6 +353,9 @@ a {
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
+  html {
+    overflow-x: hidden;
+  }
   .center {
     padding-left: 24px;
     padding-right: 24px;

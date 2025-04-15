@@ -1,4 +1,7 @@
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { 
+
+  html { overflow-x: hidden; } 
+
     .center {
         padding-left: calc(50% - 393px); 
         padding-right: calc(50% - 393px);
@@ -37,7 +40,10 @@
     }   
 } 
  
-@media (min-width: 768px) and (max-width: 833px) {
+@media (min-width: 768px) and (max-width: 833px) { 
+   
+  html { overflow-x: hidden; } 
+
     .center {
         padding-left: 24px; 
         padding-right: 24px;
