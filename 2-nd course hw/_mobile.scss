@@ -51,8 +51,11 @@
       }
        
       .scrollbar {
-        width: 1717.4px;
-        height: 51.34px;  
+         
+        &__content {
+          width: 1717.4px;
+          height: 51.34px;
+        }  
          
         &__text {
           font-size: 16px; 

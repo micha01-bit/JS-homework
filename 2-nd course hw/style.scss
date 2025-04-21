@@ -84,17 +84,21 @@
     }  
      
     /*Полоса прокрутки*/
-    .scrollbar {
-      width: 3220px;
-      height: 90px; 
-      display: flex; 
-      align-items: center;
+    .scrollbar {  
       backdrop-filter: blur(50px);
       background: rgb(188, 236, 48);
-      flex-wrap: wrap; 
       overflow: hidden; 
       white-space: nowrap;
-      animation: scroll 16s linear infinite;
+       
+       
+      &__content {
+        display: flex; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        width: 3220px;
+        height: 90px; 
+        animation: scroll 16s linear infinite;
+      }
       
        
       @keyframes scroll {
@@ -230,6 +234,10 @@
         text-align: left;
         padding: 0 36px 32px;
       } 
+       
+      &-img__text-tab, &-img__text-tab2 {
+        display: none;
+      }
     
     } 
     /*Мини-игры*/ 

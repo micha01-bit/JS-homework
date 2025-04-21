@@ -80,16 +80,18 @@ a {
 
 /*Полоса прокрутки*/
 .scrollbar {
-  width: 3220px;
-  height: 90px;
-  display: flex;
-  align-items: center;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
-  flex-wrap: wrap;
   overflow: hidden;
   white-space: nowrap;
+}
+.scrollbar__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3220px;
+  height: 90px;
   animation: scroll 16s linear infinite;
 }
 @keyframes scroll {
@@ -215,6 +217,9 @@ a {
   text-align: left;
   padding: 0 36px 32px;
 }
+.games-img__text-tab, .games-img__text-tab2 {
+  display: none;
+}
 
 /*Мини-игры*/
 .mini-games {
@@ -330,6 +335,14 @@ a {
     grid-template-columns: repeat(8, 1fr);
     align-items: baseline;
   }
+  .games-img__text-tab {
+    display: block;
+    padding-bottom: 70px;
+  }
+  .games-img__text-tab2 {
+    display: block;
+    padding-bottom: 110px;
+  }
   .game-cards {
     gap: 24px;
     justify-content: center;
@@ -363,6 +376,10 @@ a {
   .games-img {
     grid-template-columns: repeat(8, 1fr);
     align-items: baseline;
+  }
+  .games-img__text-tab, .games-img__text-tab2 {
+    display: block;
+    padding-bottom: 70px;
   }
 }
 @media (max-width: 767px) {
@@ -409,7 +426,7 @@ a {
     font-size: 16px;
     margin-bottom: 131px;
   }
-  .scrollbar {
+  .scrollbar__content {
     width: 1717.4px;
     height: 51.34px;
   }

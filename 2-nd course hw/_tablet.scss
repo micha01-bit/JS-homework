@@ -9,7 +9,18 @@
 
     .games-img {
         grid-template-columns: repeat(8, 1fr); 
-        align-items: baseline;
+        align-items: baseline; 
+         
+        &__text-tab {
+          display: block; 
+          padding-bottom: 70px;
+        } 
+         
+        &__text-tab2 {
+          display: block; 
+          padding-bottom: 110px;
+        }
+
     }  
      
     .game-cards {
@@ -51,6 +62,13 @@
      
     .games-img {
         grid-template-columns: repeat(8, 1fr); 
-        align-items: baseline;
+        align-items: baseline; 
+
+          
+        &__text-tab, &__text-tab2 {
+          display: block; 
+          padding-bottom: 70px;
+        } 
+         
     }
 }
