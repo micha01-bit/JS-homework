@@ -227,17 +227,13 @@
         margin-right: 210px;
       }
       
-      &-img__text {
+      &-img__text, &-img__text1, &-img__text2 {
         color: rgb(32, 32, 39);
         font-size: 32px;
         font-weight: 700;
         text-align: left;
         padding: 0 36px 32px;
       } 
-       
-      &-img__text-tab, &-img__text-tab2 {
-        display: none;
-      }
     
     } 
     /*Мини-игры*/ 

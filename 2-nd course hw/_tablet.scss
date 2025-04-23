@@ -11,13 +11,12 @@
         grid-template-columns: repeat(8, 1fr); 
         align-items: baseline; 
          
-        &__text-tab {
-          display: block; 
+         
+        &__text1 { 
           padding-bottom: 70px;
         } 
          
-        &__text-tab2 {
-          display: block; 
+        &__text2 { 
           padding-bottom: 110px;
         }
 
@@ -65,8 +64,7 @@
         align-items: baseline; 
 
           
-        &__text-tab, &__text-tab2 {
-          display: block; 
+        &__text1, &__text2 { 
           padding-bottom: 70px;
         } 
          

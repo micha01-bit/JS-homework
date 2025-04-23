@@ -210,15 +210,12 @@ a {
   margin-bottom: 16px;
   margin-right: 210px;
 }
-.games-img__text {
+.games-img__text, .games-img__text1, .games-img__text2 {
   color: rgb(32, 32, 39);
   font-size: 32px;
   font-weight: 700;
   text-align: left;
   padding: 0 36px 32px;
-}
-.games-img__text-tab, .games-img__text-tab2 {
-  display: none;
 }
 
 /*Мини-игры*/
@@ -335,12 +332,10 @@ a {
     grid-template-columns: repeat(8, 1fr);
     align-items: baseline;
   }
-  .games-img__text-tab {
-    display: block;
+  .games-img__text1 {
     padding-bottom: 70px;
   }
-  .games-img__text-tab2 {
-    display: block;
+  .games-img__text2 {
     padding-bottom: 110px;
   }
   .game-cards {
@@ -377,8 +372,7 @@ a {
     grid-template-columns: repeat(8, 1fr);
     align-items: baseline;
   }
-  .games-img__text-tab, .games-img__text-tab2 {
-    display: block;
+  .games-img__text1, .games-img__text2 {
     padding-bottom: 70px;
   }
 }
@@ -510,5 +504,7 @@ a {
   .footer__title {
     font-size: 16px;
     line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
