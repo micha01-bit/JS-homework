@@ -2,10 +2,13 @@
         margin: 0;
         padding: 0;
      }  
+      
+     html { overflow-x: hidden; }
        
     body {
         font-family: "Montserrat", sans-serif; 
         overflow-x: hidden; 
+        transition: background-color 0.5s; 
       } 
     
     a {
@@ -18,11 +21,14 @@
       } 
        
     /* ШАПКА*/
-    .top {
+    .top { 
       background: #E1FF8F;
-      background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
-      background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;  
+      background-image: url(img/star1.svg), url(img/star-big.svg), url(img/star2.svg);
+      background-position: 63px 69px, calc(100% + 482px) calc(80%), calc(100% - 344px) calc(100% - 55px);
       background-repeat: no-repeat; 
+      overflow: hidden;
+      position: relative;    
+      
        
       &__title {
         color: #202027;
@@ -30,7 +36,8 @@
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;  
-        padding-top: 196px;
+        padding-top: 196px; 
+        padding-bottom: 24px;
       } 
        
       &__text{
@@ -40,22 +47,19 @@
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
-        padding-top: 24px;
+        padding-bottom: 48px;
       } 
        
-      &__text-weight {
-        color: #202027;
-        font-family: "Montserrat", sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 32px;
-      } 
+      &__text_mob {
+        display: none;
+    } 
        
       &__link { 
-        display: inline-block;
+        display: inline-block; 
+        box-sizing: border-box; 
+        padding-top: 16px;
         width: 247px;
-        height: 50px;
+        height: 66px;
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
         background: rgb(32, 32, 39);
@@ -63,12 +67,14 @@
         font-size: 24px;
         font-weight: 600;
         text-align: center;
-        margin-top: 48px;
-        margin-bottom: 187px;
-        font-family: "Montserrat"; 
-        cursor: pointer; 
-        padding-top: 16px;
+        cursor: pointer;  
+        line-height: 141.688%;
+        margin-bottom: 156px;
       } 
+       
+      &__link_mob {
+        display: none;
+      }
       
       &__link:hover {
         background: #FFF;
@@ -78,17 +84,21 @@
     }  
      
     /*Полоса прокрутки*/
-    .scrollbar {
-      width: 3220px;
-      height: 90px; 
-      display: flex; 
-      align-items: center;
+    .scrollbar {  
       backdrop-filter: blur(50px);
       background: rgb(188, 236, 48);
-      flex-wrap: wrap; 
       overflow: hidden; 
       white-space: nowrap;
-      animation: scroll 16s linear infinite;
+       
+       
+      &__content {
+        display: flex; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        width: 3220px;
+        height: 90px; 
+        animation: scroll 16s linear infinite;
+      }
       
        
       @keyframes scroll {
@@ -117,9 +127,9 @@
       flex-direction: column;
       align-items: flex-start;
       background: #202027; 
-      background-image: url(img/blackStar-big.svg), url(img/blackStar-middle1.svg), url(img/blackStar-small1.svg); 
-      background-repeat: no-repeat; 
-      background-position: 1060px 127px, 40px 822px, 25px 770px; 
+      background-image: url(img/star-mini3.svg), url(img/big\ \ black-star.svg);  
+      background-position: 25px 770px, 111% 85px;  
+      background-repeat: no-repeat;
 
       &__title {
         color: #FFF;
@@ -169,6 +179,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+      } 
+       
+      &-img__item-x {
+        border-radius: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
       }
       
       &-img__card_top {
@@ -185,9 +202,7 @@
         background: url(img/card3.svg);
       }
       &-img__item4{
-        position: absolute; 
-        padding-left: 65px; 
-        padding-top: 30px;
+        background: url(img/card4.jpg);
       }
       &-img__item5{
         background: url(img/card5.svg);
@@ -212,7 +227,7 @@
         margin-right: 210px;
       }
       
-      &-img__text {
+      &-img__text, &-img__text1, &-img__text2 {
         color: rgb(32, 32, 39);
         font-size: 32px;
         font-weight: 700;
@@ -223,14 +238,12 @@
     } 
     /*Мини-игры*/ 
     .mini-games { 
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
       background-color: #202027; 
-      background-image: url(img/blackStar-middle.svg), url(img/blackStar-small.svg), url(img/blackStar-middle2.svg), url(img/blackStar-small2.svg); 
+      background-image: url(img/star-mini1.svg), url(img/star-mini2.svg);
+      background-position: calc(100% - 80px) calc(100% - 3299px), calc(100% - 80px) calc(100% - 45px);
       background-repeat: no-repeat; 
-      background-position: 1360px 130px, 1320px 93px, 1350px 3366px, 1300px 3414px; 
-      padding-bottom: 134px;
+      padding-bottom: 134px; 
+      transition: background-color 0.5s;
        
       &__title {
         color: #FFF;
@@ -244,81 +257,30 @@
       } 
     } 
     /*Карточки мини-игр*/ 
-    .game-cards { 
+    .game-cards {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-between; 
+      justify-content: space-between;  
       gap: 32px; 
+    
+      &__wrapper {
+        display: flex; 
+        border-radius: 30px;
+        background: #FFF;
+      } 
        
-      &__mob {
-        display: none;
+      &__wrapper_two {
+        flex-direction: row-reverse;
       }
-       
+        
       &__container {
-       display: flex; 
-       flex-wrap: wrap;
-       flex-direction: column;  
-       background-color: #FFFFFF; 
-       border-radius: 30px; 
-       height: 500px;
-      } 
-       
-     &__item {
-        border-radius: 30px;
-        height: 500px; 
-        width: 600px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; 
-         
-        &-a {
-          background-image: url(img/big-card1.svg); 
-        } 
-         
-        &2 {
-          background-image: url(img/big-card2.svg);
-        } 
-         
-        &3 {
-          background-image: url(img/big-card3.svg);
-        } 
-         
-        &4 {
-          background-image: url(img/big-card4.svg);
-        } 
-         
-        &5 {
-          position: absolute;  
-          background: none; 
-          margin-left: 707px;
-          margin-top: 50px;
-        }
-         
-        &6 {
-          background-image: url(img/big-card6.svg);
-        }
-      } 
-       
-      &__item1 {
-        border-radius: 30px;
-        height: 500px; 
-        width: 600px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; 
-        margin-left: 105px;  
-      }
-       
-      &__item-b {
-        border-radius: 30px;
-        height: 500px; 
-        width: 600px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; 
-        margin-left: 115px;  
-      } 
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column;  
+        background-color: #FFFFFF; 
+        border-radius: 30px;  
+        width: 600px; 
+       }  
 
       &__title {  
         color: rgb(32, 32, 39); 
@@ -326,7 +288,7 @@
         font-weight: 700;
         line-height: 59px; 
         padding-top: 48px; 
-        padding-left: 48px;
+        padding-left: 48px; 
       } 
        
       &__text {
@@ -338,10 +300,14 @@
         padding-left: 48px; 
       } 
        
+      &__text_mob {
+        display: none;
+      }  
+       
       &__link { 
         display: inline-block;
         width: 247px;
-        height: 50px; 
+        height: 66px; 
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
         background: rgb(32, 32, 39);
@@ -350,8 +316,7 @@
         font-weight: 600;
         line-height: 141.69%; 
         cursor: pointer; 
-        text-align: center; 
-        padding-top: 16px; 
+        text-align: center;  
         margin-top: 36px; 
         margin-left: 48px; 
          
@@ -361,60 +326,13 @@
         }
       } 
        
-      &__content {
-        padding-top: 48px; 
-        padding-right: 150px; 
+      &__img {
+        border-radius: 30px; 
         
       } 
        
-      &__content1 {
-        padding-top: 48px; 
-        padding-right: 100px;
-      } 
-       
-      &__content2 {
-        padding-top: 48px;
-      }
-       
-      &__title1 {  
-        color: rgb(32, 32, 39); 
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 59px; 
-         
-      } 
-       
-      &__text1 {
-        color: rgb(32, 32, 39);  
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px; 
-        padding-top: 24px;  
-      } 
-       
-      &__link1 { 
-        display: inline-block;
-        width: 247px;
-        height: 50px; 
-        border: 1px solid rgb(32, 32, 39);
-        border-radius: 60px;
-        background: rgb(32, 32, 39);
-        color: #FFFFFF; 
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 141.69%; 
-        cursor: pointer; 
-        text-align: center; 
-        padding-top: 16px; 
-        margin-top: 36px;  
-         
-        &:hover {
-          background-color: #fff; 
-          color: #000;
-        }
-      }
-       
     }  
+
     /*Подвал*/
     .footer {
      background: rgb(189, 237, 53);  
@@ -432,4 +350,5 @@
      }
     }
      
+    @import 'tablet';
     @import 'mobile';

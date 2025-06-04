@@ -1,7 +1,7 @@
 function playGame2() {
     const rules = {
         'камень': { 'побеждает': 'ножницы', 'проигрывает': 'бумага' },
-        'ножницы': { 'побеждает': 'бумага', 'проигрывает': 'камень' },
+        'ножницы': { 'побеждают': 'бумагу', 'проигрывают': 'камень' },
         'бумага': { 'побеждает': 'камень', 'проигрывает': 'ножницы' }
     };
 
@@ -13,9 +13,14 @@ function playGame2() {
 
     const userChoice = prompt('Выберите: камень, ножницы или бумага');
 
+    if (!userChoice || !['камень', 'ножницы', 'бумага'].includes(userChoice.toLowerCase())) {
+        alert('Некорректный выбор. Пожалуйста, выберите камень, ножницы или бумагу.');
+        return;
+    }
+
     const choices = ['камень', 'ножницы', 'бумага'];
 
-    const computerChoice = choices[Math.floor(Math.random() * choices.length)]; 
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
     let result;
     if (userChoice === computerChoice) {
@@ -30,3 +35,5 @@ function playGame2() {
     alert(`Выбор компьютера: ${computerChoice}`);
     alert(result);
 }
+
+document.querySelector('#playBtn').addEventListener('click', playGame2);
